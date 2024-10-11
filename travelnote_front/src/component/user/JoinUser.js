@@ -363,12 +363,12 @@ const JoinUser = () => {
     if (category === "agency") {
       user.userName = user.userNick;
       if (
-        //emailCheck === 4 &&
+        emailCheck === 4 &&
         pwState === 3 &&
         phoneState === 3 &&
         nameState === 2 &&
-        nickState === 3
-        //&&businessRegNoState === 3
+        nickState === 3 &&
+        businessRegNoState === 3
       ) {
         setUser((prevUser) => ({
           ...prevUser,
@@ -397,7 +397,7 @@ const JoinUser = () => {
       }
     } else if (category === "user") {
       if (
-        //emailCheck === 4 &&
+        emailCheck === 4 &&
         pwState === 3 &&
         phoneState === 3 &&
         nameState === 2 &&
